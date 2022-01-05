@@ -1,0 +1,18 @@
+@import "../variables";
+
+// A4: 297mm x 210mm
+$a4-ratio: 297/210;
+
+.label {
+  display: inline-block;
+  width: calc(100vw / 3);
+  height: calc(99vw * #{$a4-ratio} / 8);
+  padding: 5px;
+
+  .label-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}
